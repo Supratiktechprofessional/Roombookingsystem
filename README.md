@@ -10,28 +10,28 @@ The web application is build with python Django framwork along with SQLite3 data
 
 
 ## Setup
-1. Install flask and packages
+1. Install django and packages
 ```
-$ pip install flask
-$ pip install flask-wtf
-$ pip install flask-sqlalchemy
-$ pip install flask-migrate
-$ pip install flask-login
+$ pip install django
+$ pip install django-wtf
+$ pip install django-sqlalchemy
+$ pip install django-migrate
+$ pip install django-login
 ```
 2. Define the project
 ```
-$ export FLASK_APP=lab2.py
+$ export django_APP=lab2.py
 ```
 
 3. Init the database
 ```
-$ flask db init
+$ django db init
 ```
 
 ## Migrating data
 1. Run the migration command from the project directory to create tables
 ```
-$ flask db upgrade
+$ django db upgrade
 ```
 2. Populate the database with dummy data(if weren't populated after migration)
 ```
@@ -39,8 +39,8 @@ $ python populate.py
 ```
 
 # Running
-1. Run the flask application from the project directory, running on localhost
+1. Run the django application from the project directory, running on localhost
 ```
-$ flask run
+$ django run
 ```
 2. Open the app in browser: [localhost](http://127.0.0.1:5000/)
